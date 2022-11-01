@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+	* {
+		margin: 10px;
+	}
+	
+	input[type=text] {
+  		width: 800px;
+	}
+	
+	div {
+		margin: auto;
+		border: 1px solid silver;
+		padding: 10px;
+	}
+	
+</style>
+
+</head>
+<body>
+<div>
+<form method = "POST" action="api/v1/sumInvoices" enctype="multipart/form-data">
+<label for="exchangeRates">Exchange rates</label>
+<input type="text" name = "exchangeRates" id = "exchangeRates">
+<br/>
+<label for="outputCurrency">Output currency</label>
+<input type="text" name = "outputCurrency" id = "outputCurrency">
+<br/>
+<label for="file">Invoice data</label>
+<input type="file" name = "file" id = "file">
+<br/>
+<label for="customerVat">Customer Vat (leave empty for all customers)</label>
+<input type="text" name = "customerVat" id = "customerVat">
+<br/>
+<input type="submit" value="Submit">
+</form>
+</div>
+
+
+
+</body>
+</html>
